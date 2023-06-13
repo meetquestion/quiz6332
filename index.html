@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>quiz1</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body>
+<h1>quiz1 By Jing Xiaopu 01563</h1>
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="submit" value="Upload">
+</form>
+
+
+<h2>Parsed Data</h2>
+<img src="../static/img/js2.jpeg" />
+<form id="csv-form" action="/update_csv" method="post">
+    <table>
+
+        <tr>
+
+            <td>
+                <input type="text" name="data[]" value="Name">
+            </td>
+
+
+            <td>
+                <input type="text" name="data[]" value="Grade">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="Id">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="Pic">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="Notes">
+            </td>
+
+            <td>
+                <button type="button" onclick="deleteRow(this)">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+
+            <td>
+                <input type="text" name="data[]" value="ann">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="8">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="901">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="ann is top of her class">
+            </td>
+            <td>
+                <button type="button" onclick="deleteRow(this)">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+
+            <td>
+                <input type="text" name="data[]" value="bob">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="8">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="902">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="lml.jpg">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="">
+            </td>
+
+            <td>
+                <button type="button" onclick="deleteRow(this)">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+
+            <td>
+                <input type="text" name="data[]" value="cat">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="905">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="cat is a music students">
+            </td>
+            <td>
+                <button type="button" onclick="deleteRow(this)">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+
+            <td>
+                <input type="text" name="data[]" value="dan">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="12">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="js2.jpg">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="">
+            </td>
+
+            <td>
+                <button type="button" onclick="deleteRow(this)">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+
+            <td>
+                <input type="text" name="data[]" value="eve">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="11">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="715">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="plays the harp">
+            </td>
+            <td>
+                <button type="button" onclick="deleteRow(this)">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+
+            <td>
+                <input type="text" name="data[]" value="fanny">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="799">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="np.jpg">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="can eat glass">
+            </td>
+
+            <td>
+                <button type="button" onclick="deleteRow(this)">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+
+            <td>
+                <input type="text" name="data[]" value="gary">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="6">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="1010">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="dont know who gary is">
+            </td>
+            <td>
+                <button type="button" onclick="deleteRow(this)">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+
+            <td>
+                <input type="text" name="data[]" value="hank">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="80">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="1099">
+            </td>
+            <td>
+                <input type="text" name="data[]" value="">
+            </td>
+            <td>
+                <input type="text" name="data[]" value="">
+            </td>
+            <td>
+                <button type="button" onclick="deleteRow(this)">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+
+            <td>
+                <input type="text" name="data[]" value="ima">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="800">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="mp.jpg">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="ima not youa">
+            </td>
+
+            <td>
+                <button type="button" onclick="deleteRow(this)">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+
+            <td>
+                <input type="text" name="data[]" value="jen">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="9">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="used to be jan">
+            </td>
+
+            <td>
+                <button type="button" onclick="deleteRow(this)">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+
+            <td>
+                <input type="text" name="data[]" value="karen">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="11">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="788">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="another karen">
+            </td>
+
+            <td>
+                <button type="button" onclick="deleteRow(this)">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+
+            <td>
+                <input type="text" name="data[]" value="lou">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="12">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="688">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="sp.jpg">
+            </td>
+
+
+
+            <td>
+                <input type="text" name="data[]" value="">
+            </td>
+
+            <td>
+                <button type="button" onclick="deleteRow(this)">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+
+            <td>
+                <input type="text" name="data[]" value="">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="">
+            </td>
+
+            <td>
+                <input type="text" name="data[]" value="">
+            </td>
+
+            <td>
+                <button type="button" onclick="deleteRow(this)">Delete</button>
+            </td>
+        </tr>
+
+    </table>
+    <button type="submit">Submit All</button>
+    <button type="button" onclick="addRow()">Add Row</button>
+</form>
+
+
+<script>
+    function deleteRow(button) {
+        var row = button.parentNode.parentNode;
+        row.parentNode.removeChild(row);
+    }
+</script>
+
+<script>
+    function addRow() {
+        var table = document.querySelector('table');
+        var newRow = table.insertRow();
+        var cell = newRow.insertCell();
+        var input = document.createElement('input');
+        input.type = 'text';
+        input.name = 'data[]';
+        cell.appendChild(input);
+    }
+</script>
+
+<script>
+    function addRow() {
+        var table = document.querySelector('table');
+        var newRow = table.insertRow();
+
+        var cellCount = table.rows[0].cells.length;
+
+        // 添加单元格并设置内容
+        for (var i = 0; i < cellCount-1; i++) {
+            var cell = newRow.insertCell();
+            var input = document.createElement("input");
+            input.type = "text";
+            input.name = "data[]";
+            cell.appendChild(input);
+        }
+    }
+</script>
+
+<form action="/show_image" method="post">
+    <label for="image-name">Enter the user name to display:</label>
+    <input type="text" id="image-name" name="image_name" required>
+    <input type="hidden" name="filename" value="">
+    <button type="submit">Submit</button>
+</form>
+
+<form action="/query" method="get">
+    <label for="image-name">Enter the user name to display:</label>
+    <label for="grade-min">Minimum grade:</label>
+    <input type="number" id="grade-min" name="min_grade" required>
+    <label for="grade-max">Maximum grade:</label>
+    <input type="number" id="grade-max" name="max_grade" required>
+    <button type="submit">Search</button>
+</form>
+
+<h2>Uploaded Images</h2>
+<div id="image-container">
+
+</div>
+
+</body>
+</html>
