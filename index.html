@@ -449,7 +449,36 @@
     <input type="number" id="grade-max" name="max_grade" required>
     <button type="submit">Search</button>
 </form>
-
+<h3>Search by grade</h3>
+<form action="/search_by_grades" method="post">
+    <input type="text" name="Start_grade" placeholder="Enter Start grade">
+    <input type="text" name="End_grade" placeholder="Enter End grade">
+    <input type="submit" value="Search">
+</form>
+<h3>Search by id or grade</h3>
+<form action="/search_by_salaryname" method="post">
+    <input type="text" name="start_id" placeholder="Enter Start id">
+    <input type="text" name="end_id" placeholder="Enter End id">
+    <input type="text" name="start_grade" placeholder="Enter Start grade">
+    <input type="text" name="end_grade" placeholder="Enter End grade">
+    <input type="submit" value="Search">
+</form>
+<h3>Update User</h3>
+<form action="/update_user" method="post">
+    <input type="text" name="name" placeholder="Enter name">
+    <input type="text" name="grade" placeholder="Enter grade">
+    <input type="text" name="id" placeholder="Enter id">
+    <input type="text" name="notes" placeholder="Enter notes">
+    <input type="submit" value="Update">
+</form>
+<h3>Add User</h3>
+<form action="/add_user" method="post">
+    <input type="text" name="name" placeholder="Enter name">
+    <input type="text" name="grade" placeholder="Enter grade">
+    <input type="text" name="id" placeholder="Enter id">
+    <input type="text" name="notes" placeholder="Enter notes">
+    <input type="submit" value="Update">
+</form>
 <h2>Uploaded Images</h2>
 <div id="image-container">
 
